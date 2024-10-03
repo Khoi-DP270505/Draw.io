@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Class Diagram - Internet Cafe Management System">
+    <mxGraphModel dx="1001" dy="631" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Khách hàng -->
+        <mxCell id="2" value="Khách hàng&#xa;&#xa;- maKhachHang: int&#xa;- ten: String&#xa;- email: String&#xa;- soDienThoai: String&#xa;- soDuTaiKhoan: float&#xa;&#xa;Methods:&#xa;+ register(): void&#xa;+ requestService(): void&#xa;+ requestComputer(): void&#xa;+ topUpBalance(amount: float): void&#xa;+ submitFeedback(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="140" width="180" height="180" as="geometry" />
+        </mxCell>
+        
+        <!-- Khách hàng thành viên -->
+        <mxCell id="3" value="Khách hàng thành viên&#xa;&#xa;- maThanhVien: int&#xa;- capDoThanhVien: String&#xa;&#xa;Methods:&#xa;+ applyDiscount(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="340" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Dịch vụ -->
+        <mxCell id="4" value="Dịch vụ&#xa;&#xa;- maDichVu: int&#xa;- tenDichVu: String&#xa;- gia: float&#xa;&#xa;Methods:&#xa;+ provideService(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="140" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Máy tính -->
+        <mxCell id="5" value="Máy tính&#xa;&#xa;- maMayTinh: int&#xa;- trangThai: String&#xa;&#xa;Methods:&#xa;+ assignComputer(): void&#xa;+ releaseComputer(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="380" y="320" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Giao dịch -->
+        <mxCell id="6" value="Giao dịch&#xa;&#xa;- maGiaoDich: int&#xa;- ngayGiaoDich: Date&#xa;- soTien: float&#xa;&#xa;Methods:&#xa;+ processTransaction(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="140" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Báo cáo -->
+        <mxCell id="7" value="Báo cáo&#xa;&#xa;- maBaoCao: int&#xa;- ngayBaoCao: Date&#xa;- doanhThu: float&#xa;&#xa;Methods:&#xa;+ generateReport(): void" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="320" width="180" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Quản lý -->
+        <mxCell id="8" value="Quản lý&#xa;&#xa;- maQuanLy: int&#xa;- ten: String&#xa;- vaiTro: String" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="860" y="140" width="180" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="9" value="" style="endArrow=block;rounded=1;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="10" value="" style="endArrow=block;rounded=1;" edge="1" parent="1" source="4" target="5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="11" value="" style="endArrow=block;rounded=1;" edge="1" parent="1" source="6" target="7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
